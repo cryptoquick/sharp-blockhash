@@ -1,0 +1,40 @@
+{
+  "name": "sharp-blockhash",
+  "version": "0.0.1",
+  "description": "Image perceptual hash calculation with sharp and blockhash",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyhu/sharp-blockhash.git"
+  },
+  "keywords": [
+    "perceptual",
+    "hash",
+    "image",
+    "search",
+    "phash",
+    "blockhash",
+    "sharp"
+  ],
+  "author": "Andy Hu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andyhu/sharp-blockhash/issues"
+  },
+  "homepage": "https://github.com/andyhu/sharp-blockhash",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "dev-null": "^0.1.1",
+    "hamming-distance": "^1.0.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "blockhash": "^0.2.0",
+    "bluebird": "^3.4.1",
+    "sharp": "^0.15.0"
+  }
+}
