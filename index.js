@@ -27,8 +27,13 @@ function SharpBlockhash(input, options) {
   if (!(this instanceof SharpBlockhash)) {
     return new SharpBlockhash(input, options);
   }
-  Sharp.call(this, input, options);
-  setOptions.call(this, defaultOptions);
+  if (input) {
+    Sharp.call(this, input, options);
+    setOptions.call(this, defaultOptions);
+  }
+  else {
+    // Sharp.call(this);
+  }
 }
 util.inherits(SharpBlockhash, Sharp);
 
